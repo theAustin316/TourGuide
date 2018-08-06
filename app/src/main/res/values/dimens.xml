@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_ht">300dp</dimen>
+    <dimen name="toolabr_ht">60dp</dimen>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="border_width">0dp</dimen>
+    <dimen name="elevation">6dp</dimen>
+    <dimen name="tool_ht">400dp</dimen>
+    <dimen name="corner_rad">24dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_elevation">12dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text">18sp</dimen>
+    <dimen name="mg_top">18dp</dimen>
+    <dimen name="circle">280dp</dimen>
+    <dimen name="mgn">30dp</dimen>
+    <dimen name="elev">36dp</dimen>
+    <dimen name="layout_ht">350dp</dimen>
+    <dimen name="textSize">28sp</dimen>
+</resources>
