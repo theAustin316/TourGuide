@@ -48,6 +48,8 @@ public class ThreeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(ThreeFragment.this.getActivity(), details1.class);
+                Toast toast = Toast.makeText(getContext(), R.string.toast, Toast.LENGTH_SHORT);
+                toast.show();
                 switch (position) {
                     case 0:
                         intent.putExtra(getString(R.string.score), position);
