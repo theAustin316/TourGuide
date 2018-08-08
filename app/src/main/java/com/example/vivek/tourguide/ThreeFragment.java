@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -51,45 +50,45 @@ public class ThreeFragment extends Fragment {
                 Intent intent = new Intent(ThreeFragment.this.getActivity(), details1.class);
                 switch (position) {
                     case 0:
-                        intent.putExtra("score", position);
-                        intent.putExtra("name", R.string.jw_cafe);
-                        intent.putExtra("var",var);
-                        intent.putExtra("img", R.drawable.jw);
+                        intent.putExtra(getString(R.string.score), position);
+                        intent.putExtra(getString(R.string.name), R.string.jw_cafe);
+                        intent.putExtra(getString(R.string.var),var);
+                        intent.putExtra(getString(R.string.img), R.drawable.jw);
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("score", position);
-                        intent.putExtra("name", R.string.ober);
-                        intent.putExtra("var",var);
-                        intent.putExtra("img", R.drawable.oberoi);
+                        intent.putExtra(getString(R.string.score), position);
+                        intent.putExtra(getString(R.string.name), R.string.ober);
+                        intent.putExtra(getString(R.string.var),var);
+                        intent.putExtra(getString(R.string.img), R.drawable.oberoi);
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("score", position);
-                        intent.putExtra("name", R.string.lel);
-                        intent.putExtra("var",var);
-                        intent.putExtra("img", R.drawable.leela);
+                        intent.putExtra(getString(R.string.score), position);
+                        intent.putExtra(getString(R.string.name), R.string.lel);
+                        intent.putExtra(getString(R.string.var),var);
+                        intent.putExtra(getString(R.string.img), R.drawable.leela);
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("score", position);
-                        intent.putExtra("var",var);
-                        intent.putExtra("name", R.string.the_hyatt);
-                        intent.putExtra("img", R.drawable.hyatt);
+                        intent.putExtra(getString(R.string.score), position);
+                        intent.putExtra(getString(R.string.var),var);
+                        intent.putExtra(getString(R.string.name), R.string.the_hyatt);
+                        intent.putExtra(getString(R.string.img), R.drawable.hyatt);
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("score", position);
-                        intent.putExtra("var",var);
-                        intent.putExtra("name", R.string.renaissance);
-                        intent.putExtra("img", R.drawable.ren);
+                        intent.putExtra(getString(R.string.score), position);
+                        intent.putExtra(getString(R.string.var),var);
+                        intent.putExtra(getString(R.string.name), R.string.renaissance);
+                        intent.putExtra(getString(R.string.img), R.drawable.ren);
                         startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("score", position);
-                        intent.putExtra("var",var);
-                        intent.putExtra("name", R.string.taj_hotel);
-                        intent.putExtra("img", R.drawable.taj);
+                        intent.putExtra(getString(R.string.score), position);
+                        intent.putExtra(getString(R.string.var),var);
+                        intent.putExtra(getString(R.string.name), R.string.taj_hotel);
+                        intent.putExtra(getString(R.string.img), R.drawable.taj);
                         startActivity(intent);
                         break;
                 }
@@ -102,44 +101,45 @@ public class ThreeFragment extends Fragment {
                 switch (position) {
                     case 0:
                         loc = getString(R.string.jw_cafe);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent);
                         break;
                     case 1:
                         loc = getString(R.string.ober);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent0 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent0.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent0.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent0);
                         break;
                     case 2:
                         loc = getString(R.string.lel);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent1 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent1.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent1.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent1);
                         break;
+
                     case 3:
                         loc = getString(R.string.the_hyatt);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent2 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent2.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent2.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent2);
                         break;
                     case 4:
                         loc = getString(R.string.renaissance);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent3 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent3.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent3.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent3);
                         break;
                     case 5:
                         loc = getString(R.string.taj_hotel);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent4 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent4.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent4.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent4);
                         break;
                 }

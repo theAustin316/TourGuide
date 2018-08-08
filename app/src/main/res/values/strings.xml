@@ -37,4 +37,37 @@
     <string name="cuisine">CUISINE</string>
     <string name="marquee">Launching our newest offers on multi-day tris to one of the greatest destination on planet Earth</string>
     <string name="place">Kanheri Caves</string>
+    <string name="info_juhu">https://en.wikipedia.org/wiki/Juhu</string>
+    <string name="info_ajanta">https://whc.unesco.org/en/list/242</string>
+    <string name="info_gateway">https://www.culturalindia.net/monuments/gateway-of-india.html</string>
+    <string name="info_haji">http://hajialidargah.in/</string>
+    <string name="info_hanging">https://en.wikipedia.org/wiki/Hanging_Gardens_of_Mumbai</string>
+    <string name="info_kalsu">https://en.wikipedia.org/wiki/Kalsubai</string>
+    <string name="info_tadoba">https://tadobanationalpark.in</string>
+    <string name="info_jw">https://www.zomato.com/mumbai/jw-caf%C3%A9-jw-marriott-mumbai-sahar-chakala</string>
+    <string name="info_oberoi">https://twitter.com/OberoiHotels</string>
+    <string name="info_leela">https://twitter.com/TheLeelaHotels</string>
+    <string name="info_hyatt">https://twitter.com/hyattregency</string>
+    <string name="info_rena">https://twitter.com/RenaissanceMum</string>
+    <string name="info_taj">https://twitter.com/TajHotels</string>
+    <string name="name">name</string>
+    <string name="img">img</string>
+    <string name="score">score</string>
+    <string name="var">var</string>
+    <string name="title">What\'s NEW ????</string>
+    <string name="tool">Now book your tickets and get on With your bucket list with our one click MMT integration tool</string>
+    <string name="mmt">http://www.makemytrip.com/travel-guide/mumbai/places-to-visit.html</string>
+    <string name="attractions">Attractions</string>
+    <string name="trmples">Temples</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="nat">Native</string>
+    <string name="maps">http://maps.google.co.in/maps?q=</string>
+    <string name="package_name">com.google.android.apps.maps</string>
+    <string name="class_name">com.google.android.maps.MapsActivity</string>
+    <string name="bluish">#074E72</string>
+    <string name="welcome">Welcome to Maharashtra !!!</string>
+    <string name="credit">Made in 2018, by theAustin316</string>
+    <string name="subtitle">Kasa kai public ????</string>
+    <string name="toast">Long Press to get directions to your desired location</string>
+    <string name="image">Image</string>
 </resources>

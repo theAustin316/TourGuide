@@ -3,7 +3,6 @@ package com.example.vivek.tourguide;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.folk
     };
     private TabLayout tabLayout;
-    private android.support.v7.widget.Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Tap target view for MMT floating action button
         TapTargetView.showFor(MainActivity.this,
-                TapTarget.forView(findViewById(R.id.fab), "What's NEW ????", "Now book your tickets and get on With your bucket list with our one click MMT integration tool")
+                TapTarget.forView(findViewById(R.id.fab), getString(R.string.title), getString(R.string.tool))
                         .outerCircleColor(R.color.blugre));
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.makemytrip.com/travel-guide/mumbai/places-to-visit.html"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.mmt)));
                 startActivity(intent);
             }
         });
@@ -74,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
     //addition of fragments with viewpager
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new OneFragment(), "Attractions");
-        adapter.addFragment(new TwoFragment(), "Temples");
-        adapter.addFragment(new ThreeFragment(), "Restaurants");
-        adapter.addFragment(new FourFragment(), "Native");
+        adapter.addFragment(new OneFragment(), getString(R.string.attractions));
+        adapter.addFragment(new TwoFragment(), getString(R.string.trmples));
+        adapter.addFragment(new ThreeFragment(), getString(R.string.restaurants));
+        adapter.addFragment(new FourFragment(), getString(R.string.nat));
         viewPager.setAdapter(adapter);
     }
 

@@ -16,13 +16,9 @@ public class details1 extends AppCompatActivity {
     int score;
     int var;
     // list of all social channels of restaurants and sites to visit
-    String social[] = {"https://en.wikipedia.org/wiki/Juhu", "https://whc.unesco.org/en/list/242",
-            "https://www.culturalindia.net/monuments/gateway-of-india.html", "http://hajialidargah.in/",
-            "https://en.wikipedia.org/wiki/Hanging_Gardens_of_Mumbai", "https://en.wikipedia.org/wiki/Kalsubai",
-            "https://en.wikipedia.org/wiki/Hanging_Gardens_of_Mumbai"};
-    String soc[] = {"https://www.zomato.com/mumbai/jw-caf%C3%A9-jw-marriott-mumbai-sahar-chakala", "https://twitter.com/OberoiHotels",
-            "https://twitter.com/TheLeelaHotels", "https://twitter.com/hyattregency", "https://twitter.com/RenaissanceMum",
-            "https://twitter.com/TajHotels"};
+    int social[] = {R.string.info_juhu, R.string.info_ajanta, R.string.info_gateway, R.string.info_haji, R.string.info_hanging,
+            R.string.info_kalsu, R.string.info_tadoba};
+    int soc[] = {R.string.info_jw, R.string.info_oberoi, R.string.info_leela, R.string.info_hyatt, R.string.info_rena, R.string.info_taj};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +28,12 @@ public class details1 extends AppCompatActivity {
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
         // get corresponding name
-        name = getIntent().getIntExtra("name", 0);
+        name = getIntent().getIntExtra(getString(R.string.name), 0);
         // get corresponding image
-        img = getIntent().getIntExtra("img", 0);
+        img = getIntent().getIntExtra(getString(R.string.img), 0);
         // get listItem position
-        score = getIntent().getIntExtra("score", 0);
-        var = getIntent().getIntExtra("var", 0);
+        score = getIntent().getIntExtra(getString(R.string.score), 0);
+        var = getIntent().getIntExtra(getString(R.string.var), 0);
 
         ImageView image = findViewById(R.id.collap_img);
         image.setImageResource(img);
@@ -52,7 +48,7 @@ public class details1 extends AppCompatActivity {
             share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(soc[score]));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(soc[score])));
                     startActivity(intent);
                 }
             });
@@ -60,7 +56,7 @@ public class details1 extends AppCompatActivity {
             share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(social[score]));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(social[score])));
                     startActivity(intent);
                 }
             });

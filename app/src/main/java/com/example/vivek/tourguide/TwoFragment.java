@@ -50,44 +50,44 @@ public class TwoFragment extends Fragment {
                 switch (position) {
                     case 0:
                         loc = getString(R.string.bhima);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent);
                         break;
                     case 1:
                         loc = getString(R.string.shani);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent0 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent0.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent0.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent0);
                         break;
                     case 2:
                         loc = getString(R.string.pule);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent1 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent1.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent1.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent1);
                         break;
                     case 3:
                         loc = getString(R.string.siddhi);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent2 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent2.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent2.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent2);
                         break;
                     case 4:
                         loc = getString(R.string.trim);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent3 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent3.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent3.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent3);
                         break;
                     case 5:
                         loc = getString(R.string.shirdi);
-                        uri = Uri.parse("http://maps.google.co.in/maps?q=" + Uri.encode(loc));
+                        uri = Uri.parse(getString(R.string.maps) + Uri.encode(loc));
                         Intent intent4 = new Intent(Intent.ACTION_VIEW, uri);
-                        intent4.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        intent4.setClassName(getString(R.string.package_name), getString(R.string.class_name));
                         startActivity(intent4);
                         break;
                 }

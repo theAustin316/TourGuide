@@ -19,11 +19,11 @@ public class SplashScreen extends AppCompatActivity {
                 .withFullScreen()
                 .withTargetActivity(MainActivity.class)
                 .withSplashTimeOut(3000)
-                .withBackgroundColor(Color.parseColor("#074E72"))
+                .withBackgroundColor(Color.parseColor(getString(R.string.bluish)))
                 .withLogo(R.drawable.mah)
-                .withHeaderText("Welcome to Maharashtra !!!")
-                .withFooterText("Made in 2018, by theAustin316")
-                .withAfterLogoText("Kasa kai public ????");
+                .withHeaderText(getString(R.string.welcome))
+                .withFooterText(getString(R.string.credit))
+                .withAfterLogoText(getString(R.string.subtitle));
 
         //color of splash screen
         config.getHeaderTextView().setTextColor(android.graphics.Color.WHITE);
